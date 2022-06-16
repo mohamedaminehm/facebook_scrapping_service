@@ -12,3 +12,14 @@ $ docker-compose up --build
 
 
 - visit http://localhost:5000/docs for documentation
+
+
+### Run Tests
+Enter bash commands into running server container
+```
+$ docker exec -it app_fastapi bash
+```
+Run the pytest command
+```
+$ pytest -v
+```
