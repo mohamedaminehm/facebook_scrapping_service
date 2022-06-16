@@ -16,7 +16,7 @@ db = get_db()
 templates = Jinja2Templates(directory="static")
 
 
-
+############ DEMO #########
 @router.get("/")
 async def page_name(request: Request):
     result = "Type a page name and submit"
@@ -31,9 +31,7 @@ async def page_name(request: Request, page_name: str = Form(...)):
         return templates.TemplateResponse("index.html", context = {"request": request, "result": posts})
     except:
         return templates.TemplateResponse("index.html", context = {"request": request, "result": {"error" : "page not found or a problem was accured"}})  
-
-
-
+############################
 
 
 
