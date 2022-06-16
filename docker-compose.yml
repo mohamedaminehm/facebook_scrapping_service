@@ -1,0 +1,26 @@
+version: "3"
+services: 
+  fastapi:
+    build: .
+    command: python -u app.py
+    environment: 
+      - PYTHONUNBUFFERED=1 #+ -u flag -> ensure python output is sent to container logs
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    links:
+      - mongo_db
+  
+  mongo_db:
+    image: mongo:latest
+    hostname: local_mongo
+    environment:
+      - MONGO_INITDB_DATABASE=app_db
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
+    container_name: mongo_db
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data:/data/mongo_db

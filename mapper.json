@@ -1,0 +1,19 @@
+{
+    "fields" : [
+        {
+            "tag" : "div",
+            "class" : "_5rgt _5nk5 _5msi", 
+            "field" : "post_text"
+        },
+        {
+            "tag" : "span",
+            "class" : "like_def _28wy",
+            "field" : "reactions"
+        },
+        {
+            "tag" : "span",
+            "class" : "cmt_def _28wy",
+            "field" : "comments"
+        }
+    ]
+}
