@@ -8,8 +8,7 @@ $ git clone https://github.com/mohamedaminehm/facebook_scrapping_service.git
 $ docker-compose up --build
 ```
 
-visit http://localhost:5000 for demo
-```
+- visit http://localhost:5000 for demo
 
-visit http://localhost:5000/docs for documentation
-```
+
+- visit http://localhost:5000/docs for documentation
