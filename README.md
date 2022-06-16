@@ -7,3 +7,6 @@ Build and run the Dockerized application by cloning the Git repo.
 $ git clone https://github.com/mohamedaminehm/facebook_scrapping_service.git
 $ docker-compose up --build
 ```
+
+Now visit http://localhost:5000
+```
