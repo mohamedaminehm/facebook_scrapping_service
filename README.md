@@ -1,5 +1,5 @@
 # facebook_scrapping_service
-Basic Python Flask app in Docker which scrape a giving facebook page name
+Basic Python Fastapi app in Docker which scrape a giving facebook page name
 
 ### Build application
 Build and run the Dockerized application by cloning the Git repo.
